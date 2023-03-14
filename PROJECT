@@ -1,0 +1,16 @@
+domain: github.com
+layout:
+- go.kubebuilder.io/v3
+projectName: k8s-cluster-crd-reconcile-limits
+repo: github.com/poorlydefinedbehaviour/k8s-cluster-crd-reconcile-limits
+resources:
+- api:
+    crdVersion: v1
+    namespaced: true
+  controller: true
+  domain: github.com
+  group: mygroup
+  kind: MyCustomResource
+  path: github.com/poorlydefinedbehaviour/k8s-cluster-crd-reconcile-limits/api/v1
+  version: v1
+version: "3"

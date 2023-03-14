@@ -1,0 +1,14 @@
+apiVersion: mygroup.github.com/v1
+kind: MyCustomResource
+metadata:
+  labels:
+    app.kubernetes.io/name: mycustomresource
+    app.kubernetes.io/instance: mycustomresource-sample
+    app.kubernetes.io/part-of: k8s-cluster-crd-reconcile-limits
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/created-by: k8s-cluster-crd-reconcile-limits
+  name: mycustomresource-sample
+spec:
+  cluster: "us-east-1"
+  status: "active"
+  database: "my-database-host:port"
